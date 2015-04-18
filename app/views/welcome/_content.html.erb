@@ -2,13 +2,17 @@
   <div class="col-md-12">
     <h3>What is &ldquo;What&rsquo;s Happening?&rdquo;</h3>
 
-    <div class="col-md-4">
-      <%= image_tag("screenshot_1.png", class: "iphone") %>
-    </div>
-    <div class="col-md-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel efficitur elit. Vestibulum at mauris ut magna viverra porta vitae vitae libero. Nulla non lectus lacinia, posuere massa porta, elementum risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vehicula aliquam nunc, nec eleifend sem posuere eu. In viverra elit in nunc commodo sollicitudin. Ut lacus orci, aliquet at auctor in, pellentesque in tellus. Mauris malesuada porttitor metus, in porta magna sagittis non. Suspendisse et lobortis justo, non tempor mauris.</p>
+    <div class="asdf" style="display: flex">
+      <div class="col-md-8" style="padding-bottom: 1em;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel efficitur elit. Vestibulum at mauris ut magna viverra porta vitae vitae libero. Nulla non lectus lacinia, posuere massa porta, elementum risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vehicula aliquam nunc, nec eleifend sem posuere eu. In viverra elit in nunc commodo sollicitudin. Ut lacus orci, aliquet at auctor in, pellentesque in tellus. Mauris malesuada porttitor metus, in porta magna sagittis non. Suspendisse et lobortis justo, non tempor mauris.</p>
 
-      <p>Pellentesque eget felis ultricies, viverra ipsum a, mattis urna. Donec suscipit vel mi ac viverra. Proin et sollicitudin tellus. Maecenas ullamcorper ipsum sit amet justo mattis dapibus. Aenean eleifend commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, purus et porta hendrerit, nisi ipsum sodales leo, nec iaculis urna erat vitae orci. Aenean id egestas velit, quis molestie nisl.</p>
+        <p>Pellentesque eget felis ultricies, viverra ipsum a, mattis urna. Donec suscipit vel mi ac viverra. Proin et sollicitudin tellus. Maecenas ullamcorper ipsum sit amet justo mattis dapibus. Aenean eleifend commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, purus et porta hendrerit, nisi ipsum sodales leo, nec iaculis urna erat vitae orci. Aenean id egestas velit, quis molestie nisl.</p>
+      </div>
+
+      <div class="col-md-4" style="order: -1; overflow: hidden; max-height: 400px; align-self: flex-end;">
+        <%= image_tag "screenshot_1.png", class: "iphone" %>
+      </div>
     </div>
+
   </div>
 </div>
