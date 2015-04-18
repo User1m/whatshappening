@@ -1,15 +1,12 @@
-<div id="icons">
-	<div id="facebook" class="logos">
-		<%= image_tag("facebook-logo", :alt => "facebook logo", :class => "logo") %>
-	</div>
+<div class="container">
+  <div class="col-md-4">
+    <i class="fa fa-facebook fa-2x"></i>
+    <%= link_to "https://twitter.com/whtsh/followers" do %>
+      <i class="fa fa-twitter fa-2x"></i>
+    <% end %>
+  </div>
 
-	<div id="twitter" class="logos">
-		<%= image_tag("twitter-logo", :alt => "twitter logo", :class => "logo") %>
-	</div>
+  <div class="col-md-8 text-right">
+    &copy; 2015 What&rsquo;s Happening
+  </div>
 </div>
-
-<div class="wh_logo">
-    <%= image_tag("logo.png", :alt => "what's happening logo", :class => "footer_logo") %>
-</div> 
-
-<p class="copyright"> &copy; 2015 What&rsquo;s Happening </p>

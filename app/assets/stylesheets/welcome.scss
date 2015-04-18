@@ -61,56 +61,15 @@ $turquoise: #1abc9c;
 }
 
 #footer {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		height: 15%;
-		background-color: #1BDBB5;
+  background-color: $turquoise;
+  color: white;
+  padding: 2em 0;
 
-	#wrapper {
-		min-height: 100%;
-	}
+  a {
+    color: white;
 
-	#icons {
-		height: 100%;
-	}
-
-	.logos {
-		float: left;
-		height: 40px;
-	}
-
-	.logo {
-		position: absolute;
-		height: 40px;
-		width: 40px;
-		bottom: 0;
-		margin-left: 10px;
-	}
-
-	.wh_logo {
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		top: 0;
-	}
-
-	.footer_logo {
-		position: absolute;
-    	width: 100px;
-		right: 50%;
-		top: 20px;
-	}
-
-	#twitter {
-		margin-left: 50px;
-	}
-
-	.copyright {
-		position: absolute;
-		color: white;
-		bottom: 0;
-		right: 5px;
-	}
-
+    &:hover {
+      color: darken($turquoise, 5%);
+    }
+  }
 }
