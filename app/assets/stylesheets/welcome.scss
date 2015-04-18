@@ -20,8 +20,14 @@ $turquoise: #1abc9c;
 
   height: 400px;
 
-  h1 {
+  #logo {
+    width: 100px;
+    margin: 3em 0 0;
+  }
+
+  h2 {
     color: white;
+    margin: 2em 0 1em;
   }
 
   input, button {
