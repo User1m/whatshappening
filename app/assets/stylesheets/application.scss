@@ -2,7 +2,72 @@
 @import "bootstrap";
 @import "fonts";
 
+html {
+	height: 100%;
+}
 
 body {
-  font-family: 'andika_basicregular';
+	height: 100%;
+	font-family: 'andika_basicregular';
+	position: relative;
+}
+
+#wrapper {
+	min-height: 100%;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 15%;
+	background-color: #1BDBB5;
+}
+
+#icons {
+	height: 100%;
+}
+
+.logos {
+	float: left;
+	height: 40px;
+}
+
+.logo {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	bottom: 0;
+	margin-left: 10px;
+}
+
+.wh_logo {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.footer_logo {
+	position: absolute;
+	width: 40px;
+	right: 50%;
+	top: 40%;
+}
+
+#twitter {
+	margin-left: 50px;
+}
+
+.copyright {
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+}
+
+h2 {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	color: white;
 }
