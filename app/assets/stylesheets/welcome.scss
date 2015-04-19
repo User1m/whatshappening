@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $turquoise: #1abc9c;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
 
 .turquoise {
   background: $turquoise;
@@ -15,9 +18,9 @@ $turquoise: #1abc9c;
 }
 
 .site {
-  display: flex;
+  @include display-flex;
+  @include flex-direction(column);
   min-height: 100vh;
-  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -128,14 +131,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center-flex {
-  display: flex;
+  @include display-flex;
+  @include align-items(center);
   height: 100vh;
-  align-items: center;
 }
 
 .flex-vertical-align {
-  @include display-flex;
-  @include align-items(center);
-
   img { width: 100%; }
 }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .flex-vertical-align {
+    @include display-flex;
+    @include align-items(center);
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: @screen-md-min) { ... } */
+
+/* [> Large devices (large desktops, 1200px and up) <] */
+/* @media (min-width: @screen-lg-min) { ... } */
