@@ -10,9 +10,10 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
+gem 'bitly'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
-gem "compass-rails", github: "Compass/compass-rails", branch: "master" 
+gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master' 
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
