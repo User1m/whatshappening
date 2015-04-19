@@ -20,7 +20,7 @@ class WelcomeController < ApplicationController
           body = body + event.to_string + "\n\n"
         end
 
-        body = body + "Powered by GiveBackHack."
+        body = body + "Powered by GiveBackHack.\nhttp://givebackhack.com/"
 
         @client.messages.create(
           from: ENV['TWILIOPHONE'],
