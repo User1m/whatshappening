@@ -14,7 +14,8 @@ class MessagesController < ApplicationController
     when "help"
       body = "Do this and this."
     else
-      body = "Couldn't process."
+      body = "Sorry, I couldn't figure out what you were trying to say!\n" +
+        "Try: EVENTS or HELP"
     end
 
     @client.messages.create(
