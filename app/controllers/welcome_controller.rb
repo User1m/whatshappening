@@ -24,16 +24,12 @@ class WelcomeController < ApplicationController
     @user = User.new
   end
 
-  def test
-    @email = params[:email]
-    @phone = params[:phone]
-  end
+  private
 
   def user_params
     params.require(:user).permit(:email, :phone_no)
   end
 
-  private
   # will contact user via ezText and ask quesitonaire
   def verify
     # get user phone
