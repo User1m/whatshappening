@@ -15,6 +15,10 @@ class Event < ActiveRecord::Base
     Event.current.last(3)
   end
 
+  def self.last_five
+    Event.current.last(5)
+  end
+
   def to_string
     name = self.name
     link = self.link
