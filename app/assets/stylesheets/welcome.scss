@@ -9,6 +9,11 @@ $turquoise: #1abc9c;
   color: white;
 }
 
+::selection {
+  background-color: #aee1d4;
+  color: #fff;
+}
+
 #header {
   background-image: -webkit-gradient(
     linear,
