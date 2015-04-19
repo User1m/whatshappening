@@ -1,16 +1,23 @@
 class WelcomeController < ApplicationController
-  
   def create
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to(:action => "success")
+      redirect_to success_path
+
+      unless @user.phone_no.nil?
+        Eztexting.connect!(ENV['EZUSERNAME'], ENV['EZPASSWORD'])
+
+        options = {
+          phonenumber: @user.phone_no,
+          message: "Welcome to What's Happening! Here are two events that are happening soon!"
+        }
+
+        Eztexting::Sms.single(options)
+      end
     else
       redirect_to root_path
     end
-     # redirect_to(:action => "test", :email => params[:email], :phone => params[:phone])
-    # redirect_to(:action => "verify", :email =>params[:email], :phone => params[:phone])
-
   end
 
   def index
