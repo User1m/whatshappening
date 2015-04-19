@@ -19,7 +19,7 @@ class WelcomeController < ApplicationController
         )
       end
     else
-      redirect_to root_path
+      redirect_to success_path, notice: "There was an error. Please try again."
     end
   end
 
