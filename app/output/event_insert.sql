@@ -1,7 +1,0 @@
-INSERT INTO EVENT VALUES('4-18-2015','4-18-2015','Franklin Park Conservatory and Botanical Gardens @ East','Family Fun: Tulips and Tutus',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Family-Fun%3A-Tulips-and-Tutus/id/45365')
-INSERT INTO EVENT VALUES('4-18-2015','4-18-2015','COSI Columbus @ Downtown Area','Week of the Young Child Family Day',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Week-of-the-Young-Child-Family-Day/id/45869')
-INSERT INTO EVENT VALUES('11-5-2014','4-30-2015','Montrose Elementary School @ Bexley','Inside Out Project',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Inside-Out-Project/id/44246')
-INSERT INTO EVENT VALUES('9-5-2014','5-22-2015','Young Chefs Academy @ Gahanna','Fun Friday Cooking Class for Kids',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Fun-Friday-Cooking-Class-for-Kids/id/43431')
-INSERT INTO EVENT VALUES('2-11-2015','5-31-2015','COSI Columbus @ Downtown Area','Jerusalem 3D',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Jerusalem-3D/id/45117')
-INSERT INTO EVENT VALUES('3-14-2015','9-7-2015','COSI Columbus @ Downtown Area','Top Secret: License to Spy',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Top-Secret%3A-License-to-Spy/id/43100')
-INSERT INTO EVENT VALUES('1-30-2015','11-27-2015','COSI Columbus @ Downtown Area','Family Friday Night',NULL,NULL,'http://www.experiencecolumbus.com/event-detail.cfm/event/Family-Friday-Night/id/45116')
