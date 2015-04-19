@@ -7,14 +7,13 @@ class WelcomeController < ApplicationController
       redirect_to success_path
 
       unless @user.phone_no.nil?
-        Eztexting.connect!(ENV['EZUSERNAME'], ENV['EZPASSWORD'])
+        @client = Twilio::REST::Client.new ENV['TWILIOSID'], ENV['TWILIOTOKEN']
 
-        options = {
-          phonenumber: @user.phone_no,
-          message: "Welcome to What's Happening! Here are two events that are happening soon!"
-        }
-
-        Eztexting::Sms.single(options)
+        @client.messages.create(
+          from: ENV['TWILIOPHONE'],
+          to: @user.phone_no,
+          body: "Welcome to What's Happening! Here are two events that are happening soon!"
+        )
       end
     else
       redirect_to root_path
