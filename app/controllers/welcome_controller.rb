@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    if @user.save
+    if @user.
       redirect_to(:action => "success")
     else
       redirect_to root_path
