@@ -13,13 +13,14 @@ class WelcomeController < ApplicationController
         @client = Twilio::REST::Client.new ENV['TWILIOSID'], ENV['TWILIOTOKEN']
 
         body = "Welcome to What's Happening! " +
+          "Messaging and Data rates may apply.\n" +
           "Here are some events that are happening soon!\n\n"
 
         Event.last_three.each do |event|
           body = body + event.to_string + "\n\n"
         end
 
-        body = body + "Messaging and Data rates may apply."
+        body = body + "Powered by GiveBackHack."
 
         @client.messages.create(
           from: ENV['TWILIOPHONE'],
