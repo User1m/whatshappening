@@ -1,17 +1,17 @@
 <div class="container">
-<div class ="col-md-12" id = "footerextras">
-    <a href = "">ABOUT </a>
-    <a href = "http://givebackhack.com/">GIVE BACK HACK</a>
-    <a href = "https://github.com/User1m/whatshappening">DEVELOPERS</a>
-    <a href = "mailto:whatshappeningcbus@gmail.com">CONTACT</a>
+  <div class ="col-md-12" id = "footerextras">
+    <%= link_to "ABOUT"%>
+    <%= link_to "GIVE BACK HACK", "http://givebackhack.com/", :target => "_blank"%>
+    <%= link_to "DEVELOPERS", "https://github.com/User1m/whatshappening", :target => "_blank"%>
+    <%= link_to "CONTACT", "mailto:whatshappeningcbus@gmail.com", :target => "_blank"%>
   </div>
 
   <div class="col-md-4">
-    <%= link_to "https://www.facebook.com/whtshappening" do %>
+    <%= link_to "https://www.facebook.com/whtshappening", :target => "_blank" do %>
     <i class="fa fa-facebook fa-2x" style="margin-right: 0.5em;"></i>
     <% end %>
 
-    <%= link_to "https://twitter.com/whtsh/" do %>
+    <%= link_to "https://twitter.com/whtsh/", :target => "_blank" do %>
     <i class="fa fa-twitter fa-2x"></i>
     <% end %>
   </div>
