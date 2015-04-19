@@ -16,6 +16,8 @@
 !/log/.keep
 /tmp
 
+Gemfile.lock
+
 .DS_Store
 
 .env
