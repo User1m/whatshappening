@@ -12,10 +12,19 @@ class WelcomeController < ApplicationController
       unless @user.phone_no.nil?
         @client = Twilio::REST::Client.new ENV['TWILIOSID'], ENV['TWILIOTOKEN']
 
+        body = "Welcome to What's Happening! " +
+          "Here are some events that are happening soon!\n\n"
+
+        Event.last_three.each do |event|
+          body = body + event.to_string + "\n\n"
+        end
+
+        body = body + "Messaging and Data rates may apply."
+
         @client.messages.create(
           from: ENV['TWILIOPHONE'],
           to: @user.phone_no,
-          body: "Welcome to What's Happening! Here are two events that are happening soon!"
+          body: body
         )
       end
     else
