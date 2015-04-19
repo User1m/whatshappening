@@ -1,6 +1,27 @@
 class Event < ActiveRecord::Base
   before_create :shorten_link
 
+  def current?
+    range = self.start_date..self.end_date
+    now = Date.today
+    range.cover?(now)
+  end
+
+  def self.current
+    Event.all.sort_by{ :start_date }.select{ |event| event.current? }
+  end
+
+  def self.last_three
+    Event.current.last(3)
+  end
+
+  def to_string
+    name = self.name
+    link = self.link
+
+    "#{name}\n#{link}"
+  end
+
   private
 
   def shorten_link
