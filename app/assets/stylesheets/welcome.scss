@@ -66,17 +66,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #content {
   flex: 1;
+
+  .color-bg {
+    padding: 5% 0;
+
+    &:first-child {
+      padding-bottom: 0;
+
+      p {
+        padding-bottom: 10%;
+      }
+    }
+  }
+
   .iphone {
     margin: 2em 0 0 -15px;
     width: 100%;
-  }
-
-    .family {
-    width: 100%;
-  }
-
-    .knowledge {
-      width: 100%;
   }
 
   p {
@@ -92,10 +97,6 @@ h1, h2, h3, h4, h5, h6 {
   h3 {
     color: #FFF;
     font-size: 36px;
-  }
-
-  .color-bg {
-    padding: 5% 0;
   }
 }
 
