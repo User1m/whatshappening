@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'eztexting'
-gem 'rails_12factor', group: :production
+gem 'twilio-ruby', '~> 4.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -33,6 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do

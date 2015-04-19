@@ -59,13 +59,8 @@ GEM
       dotenv (= 2.0.1)
     erubis (2.7.0)
     execjs (2.5.2)
-    eztexting (0.3.4)
-      httparty (>= 0.6.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
-    httparty (0.13.3)
-      json (~> 1.8)
-      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.2.13)
       activesupport (>= 3.0.0, < 5)
@@ -75,6 +70,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.2)
+    jwt (1.4.1)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -83,7 +79,6 @@ GEM
     mini_portile (0.6.2)
     minitest (5.6.0)
     multi_json (1.11.0)
-    multi_xml (0.5.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.18.1)
@@ -144,6 +139,10 @@ GEM
     tilt (1.4.1)
     turbolinks (2.5.3)
       coffee-rails
+    twilio-ruby (4.0.0)
+      builder (>= 2.1.2)
+      jwt (~> 1.0)
+      multi_json (>= 1.3.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -162,7 +161,6 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.4)
   coffee-rails (~> 4.1.0)
   dotenv-rails
-  eztexting
   jbuilder (~> 2.0)
   jquery-rails
   pg
@@ -173,5 +171,6 @@ DEPENDENCIES
   spring
   sqlite3
   turbolinks
+  twilio-ruby (~> 4.0.0)
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
