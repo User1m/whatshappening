@@ -95,6 +95,9 @@ h1, h2, h3, h4, h5, h6 {
     .iphone {
       margin: 2em 0 0;
       width: 100%;
+      max-width: 400px;
+      margin: 0px auto;
+      display: block;
     }
   }
 
@@ -111,6 +114,18 @@ h1, h2, h3, h4, h5, h6 {
   h3 {
     color: #FFF;
     font-size: 36px;
+  }
+
+  .family {
+    max-width: 400px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .knowledge {
+    max-width: 200px;
+    display: block;
+    margin: 0px auto;
   }
 }
 
@@ -167,7 +182,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Medium devices (desktops, 992px and up) */
-/* @media (min-width: @screen-md-min) { ... } */
+@media (min-width: $screen-md-min) {
+}
 
 /* [> Large devices (large desktops, 1200px and up) <] */
 /* @media (min-width: @screen-lg-min) { ... } */
