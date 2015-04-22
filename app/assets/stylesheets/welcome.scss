@@ -23,6 +23,10 @@ $screen-lg-min: 1200px;
   min-height: 100vh;
 }
 
+h2 {
+  font-size: 1.8em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: aleobold;
 }
@@ -82,9 +86,16 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  .iphone {
-    margin: 2em 0 0 -15px;
-    width: 100%;
+  .iphone-container {
+    @include order(-1);
+    @include align-self(flex-end);
+    overflow: hidden;
+    max-height: 400px;
+
+    .iphone {
+      margin: 2em 0 0 -15px;
+      width: 100%;
+    }
   }
 
   p {
@@ -145,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+  h2 {
+    font-size: 30px;
+  }
+
   .flex-vertical-align {
     @include display-flex;
     @include align-items(center);
