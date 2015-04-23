@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'twilio-ruby', '~> 4.0.0'
+gem 'devise'
 gem 'email_validator'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
