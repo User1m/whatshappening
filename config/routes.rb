@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'success' => 'welcome#success'
   get 'forward' => 'messages#forward', as: :forward
+  get 'branding' => 'welcome#branding'
 
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
