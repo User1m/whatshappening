@@ -4,7 +4,7 @@ class Event < ActiveRecord::Base
   def current?
     range = self.start_date..self.end_date
     now = Date.today
-    range.cover?(now)
+    range.cover?(now) or now < self.start_date
   end
 
   def self.current
