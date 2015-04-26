@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'events/index'
-
   get 'errors/file_not_found'
 
   get 'errors/unprocessable'
@@ -14,6 +12,8 @@ Rails.application.routes.draw do
   get 'success' => 'welcome#success'
   get 'forward' => 'messages#forward', as: :forward
   get 'branding' => 'welcome#branding'
+
+  get 'events' => 'events#index'
 
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
