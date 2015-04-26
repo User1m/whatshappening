@@ -1,7 +1,9 @@
 <div class="container">
   <div class="col-md-12">
     <div id="navigation">
-      <%= image_tag("logo.png", id: "logo") %>
+      <%= link_to root_path do %>
+        <%= image_tag("logo.png", id: "logo") %>
+      <% end %>
 
       <ul>
         <li>About</li>
