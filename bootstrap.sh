@@ -2,6 +2,7 @@
 
 sudo apt-get -y install git
 sudo apt-get -y install make
+sudo apt-get -y install libsqlite3-dev
 
 git clone https://github.com/sstephenson/rbenv.git /home/vagrant/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git /home/vagrant/.rbenv/plugins/ruby-build
