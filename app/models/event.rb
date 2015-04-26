@@ -27,7 +27,7 @@ class Event < ActiveRecord::Base
   end
 
   def self.humanize_date(date)
-    date.strftime("%m/%d")
+    date.strftime("%m/%d/%y")
   end
 
   private
