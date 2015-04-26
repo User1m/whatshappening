@@ -26,6 +26,10 @@ class Event < ActiveRecord::Base
     "#{name}\n#{link}"
   end
 
+  def self.humanize_date(date)
+    date.strftime("%m/%d")
+  end
+
   private
 
   def shorten_link
