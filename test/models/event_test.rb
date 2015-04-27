@@ -8,14 +8,14 @@ class EventTest < ActiveSupport::TestCase
   end
 
   test "current events should be current" do
-    old_event = Event.new(start_date: Date.today, end_date: Date.today,
+    current_event = Event.new(start_date: Date.today, end_date: Date.today,
       location: "Columbus", name: "My Event", link: "google.com");
-    assert old_event.current?
+    assert current_event.current?
   end
 
   test "future events should be current" do
-    old_event = Event.new(start_date: Date.tomorrow, end_date: Date.tomorrow,
+    future_event = Event.new(start_date: Date.tomorrow, end_date: Date.tomorrow,
       location: "Columbus", name: "My Event", link: "google.com");
-    assert old_event.current?
+    assert future_event.current?
   end
 end
