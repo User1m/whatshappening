@@ -3,6 +3,7 @@
 sudo apt-get -y install git
 sudo apt-get -y install make
 sudo apt-get -y install libsqlite3-dev
+sudo apt-get -y install nodejs
 
 git clone https://github.com/sstephenson/rbenv.git /home/vagrant/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git /home/vagrant/.rbenv/plugins/ruby-build
@@ -17,3 +18,4 @@ rbenv global 2.2.2
 cd /vagrant
 gem install bundle
 bundle install --without production
+rake db:migrate RAILS_ENV=development
