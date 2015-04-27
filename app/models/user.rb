@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   validates :phone_no, :length => {:is => 10, :message => "Please enter a valid phone number."}, presence: true
   validates :phone_no, uniqueness: true
 
+  before_validation(on: :create) do
+    self.phone_no = phone_no.gsub(/\D/, "") if attribute_present?("phone_no")
+  end 
+
   def send_text
     @client = Twilio::REST::Client.new ENV['TWILIOSID'], ENV['TWILIOTOKEN']
 
