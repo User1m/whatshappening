@@ -17,7 +17,7 @@
 /tmp
 
 Gemfile~
-
 .DS_Store
-
 .env
+.idea
+.vagrant
