@@ -40,6 +40,10 @@ a {
   }
 }
 
+.success-image, .error-image {
+  max-width: 300px;
+}
+
 #navigation {
   @include display-flex;
   @include flex-wrap(nowrap);
