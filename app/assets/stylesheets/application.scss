@@ -15,3 +15,8 @@ body {
 	font-family: 'andika_basicregular';
 	position: relative;
 }
+
+// fix for tables in Firefox
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
