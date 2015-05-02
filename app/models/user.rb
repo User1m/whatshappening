@@ -1,3 +1,5 @@
+require 'mandrill'
+
 class User < ActiveRecord::Base
   validates :email, email: true, allow_blank: true
   validates :zipcode, :length => {:is => 5, :message => "Zip code must be 5 digits long."}, allow_blank: true
@@ -26,5 +28,18 @@ class User < ActiveRecord::Base
       to: self.phone_no,
       body: body
     )
+  end
+
+  def send_email
+    mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
+    template_name = "welcome"
+
+    template_content = [{"content"=>"example content", "name"=>"example name"}]
+    message = {
+      "from_name" => "What's Happening",
+      "to" => [{"email" => self.email}]
+    }
+
+    result = mandrill.messages.send_template template_name, template_content, message
   end
 end
