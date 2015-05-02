@@ -12,6 +12,10 @@ class WelcomeController < ApplicationController
       unless @user.phone_no.nil?
         @user.send_text
       end
+
+      unless @user.email.nil?
+        @user.send_email
+      end
     else
       redirect_to success_path, notice: "There was an error. Please try again."
     end
