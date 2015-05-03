@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'twilio-ruby', '~> 4.0.0'
 gem 'email_validator'
 gem 'mandrill-api'
+gem 'watir-webdriver'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
