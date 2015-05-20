@@ -22,7 +22,7 @@
                 <td><%= Event.humanize_date event.start_date %></td>
                 <td><%= Event.humanize_date event.end_date %></td>
                 <td><%= event.location %></td>
-                <td><%= link_to event.link %></td>
+                <td><%= link_to event.link, event.link %></td>
               </tr>
             <% end %>
           </tbody>
